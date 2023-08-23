@@ -14,10 +14,7 @@ if hexo-config('preloader')
       display: none
 
   #loading-box
-    position: absolute;
-    top: 0;
-    width 100%
-    height 100%
+    user-select none
     .loading-img
       width: 100px;
       height: 100px;
@@ -38,17 +35,6 @@ if hexo-config('preloader')
       top: 50%;
       left: 50%;
       transform: translate(18px, 24px);
-    #loading-percentage
-      position: absolute;
-      top: 67%;
-      left: 50%;
-      transform: translateX(-50%);
-      &::before
-        content: "「"
-        margin-right: 10px
-      &::after
-        content: "」"
-        margin-left: 10px
     &.loaded
       .loading-bg
         opacity: 0;
